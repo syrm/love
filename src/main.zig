@@ -51,7 +51,7 @@ pub fn main() !void {
     const firstPerson = love.Person.init(firstname1.?, lastname1.?);
     const secondPerson = love.Person.init(firstname2.?, lastname2.?);
 
-    const result = try love.loveCalculator(allocator,firstPerson, secondPerson);
+    const result = try love.loveCalculator(allocator, firstPerson, secondPerson);
 
     try stdout.print("Love result: {}%\n", .{result});
 }
